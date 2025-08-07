@@ -91,17 +91,7 @@ export default function Index() {
               Ежегодная премия, признающая выдающиеся достижения российских сообществ 
               в области технологий, образования и социального развития
             </p>
-            
-            <div className="mt-10 flex items-center justify-center gap-4">
-              <Button size="lg" className="shadow-lg hover:shadow-xl transition-all">
-                <Icon name="Trophy" className="mr-2" size={20} />
-                Подать заявку
-              </Button>
-              <Button variant="outline" size="lg" className="shadow-lg hover:shadow-xl transition-all">
-                <Icon name="Play" className="mr-2" size={20} />
-                Смотреть видео
-              </Button>
-            </div>
+
           </div>
         </div>
       </section>
