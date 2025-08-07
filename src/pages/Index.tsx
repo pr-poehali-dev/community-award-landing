@@ -148,12 +148,142 @@ export default function Index() {
         </div>
       </section>
 
+      {/* Categories Section */}
+      <section className="py-16 sm:py-24">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+              Категории премии
+            </h2>
+            <p className="mt-4 text-lg text-gray-600">
+              Выберите категорию, соответствующую вашему проекту
+            </p>
+          </div>
+          
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            <Card className="hover:shadow-lg transition-shadow border-l-4 border-l-blue-500">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <Icon name="Code" className="text-blue-500" size={24} />
+                  Технологии и инновации
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-600 mb-4">
+                  Сообщества в сфере IT, разработки ПО, искусственного интеллекта и цифровых технологий.
+                </p>
+                <div className="space-y-1 text-sm text-gray-500">
+                  <div>• Open Source проекты</div>
+                  <div>• IT-сообщества</div>
+                  <div>• Стартап-инкубаторы</div>
+                </div>
+              </CardContent>
+            </Card>
+            
+            <Card className="hover:shadow-lg transition-shadow border-l-4 border-l-green-500">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <Icon name="BookOpen" className="text-green-500" size={24} />
+                  Образование и наука
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-600 mb-4">
+                  Образовательные инициативы, научные сообщества и проекты популяризации знаний.
+                </p>
+                <div className="space-y-1 text-sm text-gray-500">
+                  <div>• Образовательные платформы</div>
+                  <div>• Научные клубы</div>
+                  <div>• Курсы и тренинги</div>
+                </div>
+              </CardContent>
+            </Card>
+            
+            <Card className="hover:shadow-lg transition-shadow border-l-4 border-l-purple-500">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <Icon name="Heart" className="text-purple-500" size={24} />
+                  Социальные инициативы
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-600 mb-4">
+                  Проекты, направленные на решение социальных проблем и помощь нуждающимся.
+                </p>
+                <div className="space-y-1 text-sm text-gray-500">
+                  <div>• Благотворительность</div>
+                  <div>• Волонтерские движения</div>
+                  <div>• Экологические проекты</div>
+                </div>
+              </CardContent>
+            </Card>
+            
+            <Card className="hover:shadow-lg transition-shadow border-l-4 border-l-orange-500">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <Icon name="Palette" className="text-orange-500" size={24} />
+                  Культура и искусство
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-600 mb-4">
+                  Творческие объединения, культурные проекты и инициативы в области искусства.
+                </p>
+                <div className="space-y-1 text-sm text-gray-500">
+                  <div>• Арт-сообщества</div>
+                  <div>• Культурные фестивали</div>
+                  <div>• Творческие мастерские</div>
+                </div>
+              </CardContent>
+            </Card>
+            
+            <Card className="hover:shadow-lg transition-shadow border-l-4 border-l-red-500">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <Icon name="Users" className="text-red-500" size={24} />
+                  Молодежные сообщества
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-600 mb-4">
+                  Инициативы, созданные и развиваемые молодыми людьми для молодежи.
+                </p>
+                <div className="space-y-1 text-sm text-gray-500">
+                  <div>• Студенческие объединения</div>
+                  <div>• Молодежные центры</div>
+                  <div>• Спортивные клубы</div>
+                </div>
+              </CardContent>
+            </Card>
+            
+            <Card className="hover:shadow-lg transition-shadow border-l-4 border-l-teal-500">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <Icon name="Building" className="text-teal-500" size={24} />
+                  Региональное развитие
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-600 mb-4">
+                  Проекты, способствующие развитию регионов и местных сообществ.
+                </p>
+                <div className="space-y-1 text-sm text-gray-500">
+                  <div>• Местные инициативы</div>
+                  <div>• Туристические проекты</div>
+                  <div>• Предпринимательство</div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
       {/* Documents Section */}
       <section className="bg-slate-50 py-16 sm:py-24">
         <div className="mx-auto max-w-4xl px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              Документы и регламенты
+              Документы и материалы
             </h2>
             <p className="mt-4 text-lg text-gray-600">
               Вся необходимая информация для участия в премии
@@ -162,7 +292,7 @@ export default function Index() {
           
           <Card className="shadow-xl border-0">
             <CardContent className="p-0">
-              <Accordion type="single" collapsible className="w-full">
+              <Accordion type="multiple" className="w-full">
                 {documents.map((doc, index) => (
                   <AccordionItem key={doc.id} value={doc.id} className="border-b border-gray-100 last:border-b-0">
                     <AccordionTrigger className="px-6 py-6 hover:bg-slate-50/50 transition-colors [&[data-state=open]]:bg-primary/5">
@@ -183,12 +313,12 @@ export default function Index() {
                     <AccordionContent className="px-6 pb-6">
                       <div className="ml-12 space-y-3">
                         {doc.items.map((item, itemIndex) => (
-                          <div key={itemIndex} className="flex items-center gap-3 p-3 rounded-lg bg-white shadow-sm border border-gray-100 hover:shadow-md transition-shadow group">
+                          <div key={itemIndex} className="flex items-center gap-3 p-4 rounded-lg bg-white shadow-sm border border-gray-100 hover:shadow-md transition-all group">
                             <div className="w-2 h-2 rounded-full bg-primary/60 group-hover:bg-primary transition-colors"></div>
-                            <span className="text-gray-700 group-hover:text-gray-900 transition-colors">{item}</span>
-                            <Button variant="ghost" size="sm" className="ml-auto opacity-0 group-hover:opacity-100 transition-opacity">
-                              <Icon name="Download" size={16} />
-                            </Button>
+                            <span className="text-gray-700 group-hover:text-gray-900 transition-colors flex-1">{item}</span>
+                            <Badge variant="outline" className="opacity-0 group-hover:opacity-100 transition-opacity">
+                              {index === 0 ? 'PDF' : index === 1 ? 'DOCX' : 'Календарь'}
+                            </Badge>
                           </div>
                         ))}
                       </div>
@@ -198,6 +328,206 @@ export default function Index() {
               </Accordion>
             </CardContent>
           </Card>
+        </div>
+      </section>
+
+      {/* Criteria Section */}
+      <section className="py-16 sm:py-24">
+        <div className="mx-auto max-w-6xl px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+              Критерии оценки
+            </h2>
+            <p className="mt-4 text-lg text-gray-600">
+              По каким параметрам оцениваются проекты
+            </p>
+          </div>
+          
+          <Accordion type="multiple" className="w-full space-y-4">
+            <AccordionItem value="impact" className="border rounded-lg px-6">
+              <AccordionTrigger className="text-left">
+                <div className="flex items-center gap-3">
+                  <Icon name="TrendingUp" className="text-green-500" size={24} />
+                  <span className="text-xl font-semibold">Социальное влияние (25 баллов)</span>
+                </div>
+              </AccordionTrigger>
+              <AccordionContent className="pt-4">
+                <div className="space-y-4">
+                  <p className="text-gray-600 mb-4">
+                    Оценка влияния проекта на общество и количества людей, которым он принес пользу.
+                  </p>
+                  <div className="grid gap-3 md:grid-cols-2">
+                    <div className="bg-green-50 p-4 rounded-lg">
+                      <h4 className="font-medium mb-2 text-green-900">Что оценивается:</h4>
+                      <ul className="space-y-1 text-sm text-green-800">
+                        <li>• Количество благополучателей</li>
+                        <li>• Качественные изменения в жизни людей</li>
+                        <li>• Решение важных социальных проблем</li>
+                      </ul>
+                    </div>
+                    <div className="bg-blue-50 p-4 rounded-lg">
+                      <h4 className="font-medium mb-2 text-blue-900">Документы:</h4>
+                      <ul className="space-y-1 text-sm text-blue-800">
+                        <li>• Отчеты о деятельности</li>
+                        <li>• Статистика и метрики</li>
+                        <li>• Отзывы благополучателей</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="innovation" className="border rounded-lg px-6">
+              <AccordionTrigger className="text-left">
+                <div className="flex items-center gap-3">
+                  <Icon name="Lightbulb" className="text-yellow-500" size={24} />
+                  <span className="text-xl font-semibold">Инновационность (20 баллов)</span>
+                </div>
+              </AccordionTrigger>
+              <AccordionContent className="pt-4">
+                <div className="space-y-4">
+                  <p className="text-gray-600 mb-4">
+                    Новизна подходов, использование современных технологий и уникальность решений.
+                  </p>
+                  <div className="grid gap-3 md:grid-cols-3">
+                    <div className="bg-yellow-50 p-4 rounded-lg text-center">
+                      <Icon name="Zap" className="text-yellow-600 mx-auto mb-2" size={32} />
+                      <h4 className="font-medium text-yellow-900">Технологии</h4>
+                      <p className="text-sm text-yellow-800 mt-1">Использование передовых технологий</p>
+                    </div>
+                    <div className="bg-purple-50 p-4 rounded-lg text-center">
+                      <Icon name="Puzzle" className="text-purple-600 mx-auto mb-2" size={32} />
+                      <h4 className="font-medium text-purple-900">Подходы</h4>
+                      <p className="text-sm text-purple-800 mt-1">Новые методы решения задач</p>
+                    </div>
+                    <div className="bg-indigo-50 p-4 rounded-lg text-center">
+                      <Icon name="Sparkles" className="text-indigo-600 mx-auto mb-2" size={32} />
+                      <h4 className="font-medium text-indigo-900">Уникальность</h4>
+                      <p className="text-sm text-indigo-800 mt-1">Оригинальность идеи</p>
+                    </div>
+                  </div>
+                </div>
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="sustainability" className="border rounded-lg px-6">
+              <AccordionTrigger className="text-left">
+                <div className="flex items-center gap-3">
+                  <Icon name="Shield" className="text-blue-500" size={24} />
+                  <span className="text-xl font-semibold">Устойчивость (20 баллов)</span>
+                </div>
+              </AccordionTrigger>
+              <AccordionContent className="pt-4">
+                <div className="bg-blue-50 p-6 rounded-lg">
+                  <p className="text-gray-600 mb-4">
+                    Стабильность работы проекта, финансовая устойчивость и планы долгосрочного развития.
+                  </p>
+                  <div className="grid gap-4 md:grid-cols-2">
+                    <div>
+                      <h4 className="font-medium mb-2 text-blue-900">Финансовая модель:</h4>
+                      <ul className="space-y-1 text-sm text-blue-800">
+                        <li>• Источники финансирования</li>
+                        <li>• Планы по привлечению средств</li>
+                        <li>• Прозрачность отчетности</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <h4 className="font-medium mb-2 text-blue-900">Организационная стабильность:</h4>
+                      <ul className="space-y-1 text-sm text-blue-800">
+                        <li>• Команда и управление</li>
+                        <li>• Партнерские отношения</li>
+                        <li>• Репутация в сообществе</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="scalability" className="border rounded-lg px-6">
+              <AccordionTrigger className="text-left">
+                <div className="flex items-center gap-3">
+                  <Icon name="ArrowUpRight" className="text-orange-500" size={24} />
+                  <span className="text-xl font-semibold">Масштабируемость (20 баллов)</span>
+                </div>
+              </AccordionTrigger>
+              <AccordionContent className="pt-4">
+                <div className="space-y-4">
+                  <p className="text-gray-600 mb-4">
+                    Потенциал распространения опыта на другие регионы и сферы деятельности.
+                  </p>
+                  <div className="bg-gradient-to-r from-orange-50 to-red-50 p-6 rounded-lg">
+                    <div className="grid gap-4 md:grid-cols-2">
+                      <div>
+                        <h4 className="font-medium mb-3 text-orange-900 flex items-center gap-2">
+                          <Icon name="Globe" size={16} />
+                          Географическое масштабирование
+                        </h4>
+                        <ul className="space-y-1 text-sm text-orange-800">
+                          <li>• Возможность работы в разных регионах</li>
+                          <li>• Адаптация к местным условиям</li>
+                          <li>• Создание филиалов и отделений</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <h4 className="font-medium mb-3 text-red-900 flex items-center gap-2">
+                          <Icon name="Network" size={16} />
+                          Тематическое масштабирование
+                        </h4>
+                        <ul className="space-y-1 text-sm text-red-800">
+                          <li>• Применение в смежных областях</li>
+                          <li>• Развитие новых направлений</li>
+                          <li>• Создание экосистемы проектов</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="community" className="border rounded-lg px-6">
+              <AccordionTrigger className="text-left">
+                <div className="flex items-center gap-3">
+                  <Icon name="Users" className="text-purple-500" size={24} />
+                  <span className="text-xl font-semibold">Развитие сообщества (15 баллов)</span>
+                </div>
+              </AccordionTrigger>
+              <AccordionContent className="pt-4">
+                <div className="bg-purple-50 p-6 rounded-lg">
+                  <p className="text-gray-600 mb-4">
+                    Активность участников, вовлеченность, создание устойчивого сообщества вокруг проекта.
+                  </p>
+                  <div className="space-y-4">
+                    <div className="grid gap-3 md:grid-cols-3">
+                      <div className="text-center">
+                        <div className="bg-white rounded-lg p-4 shadow-sm">
+                          <Icon name="UserPlus" className="text-purple-600 mx-auto mb-2" size={28} />
+                          <h4 className="font-medium text-purple-900">Рост участников</h4>
+                          <p className="text-sm text-purple-700 mt-1">Увеличение аудитории</p>
+                        </div>
+                      </div>
+                      <div className="text-center">
+                        <div className="bg-white rounded-lg p-4 shadow-sm">
+                          <Icon name="MessageSquare" className="text-purple-600 mx-auto mb-2" size={28} />
+                          <h4 className="font-medium text-purple-900">Активность</h4>
+                          <p className="text-sm text-purple-700 mt-1">Участие в обсуждениях</p>
+                        </div>
+                      </div>
+                      <div className="text-center">
+                        <div className="bg-white rounded-lg p-4 shadow-sm">
+                          <Icon name="HandHeart" className="text-purple-600 mx-auto mb-2" size={28} />
+                          <h4 className="font-medium text-purple-900">Вовлеченность</h4>
+                          <p className="text-sm text-purple-700 mt-1">Глубина участия</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </AccordionContent>
+            </AccordionItem>
+          </Accordion>
         </div>
       </section>
 
